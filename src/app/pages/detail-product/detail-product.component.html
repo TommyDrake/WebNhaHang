@@ -1,0 +1,14 @@
+<h1>Chi tiet tung mon do an</h1>
+
+<h1>{{ detailProduct?.name }}</h1>
+
+<img src="{{ detailProduct?.imageUrl }}" alt="hinh" class="product-image2" />
+<div class="product-details2">
+  <p>Gia mon an: {{ detailProduct?.price }} dong</p>
+  <p>Nhan xet mon an: {{ detailProduct?.description }}</p>
+  <p>So luong mon an: {{ detailProduct?.inStock }}</p>
+  <button (click)="storeService.addToCart(detailProduct)">Them vao gio</button>
+  <button (click)="storeService.removeFromCart(detailProduct)">
+    Xoa khoi gio
+  </button>
+</div>

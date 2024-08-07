@@ -1,0 +1,30 @@
+h1 {
+  text-align: center;
+}
+
+#product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Adjust the gap as needed */
+  flex-wrap: wrap; /* Allow wrapping to ensure all products fit */
+  margin: 0 auto; /* Center the container */
+  max-width: 80%; /* Adjust the width as needed */
+}
+
+#summary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  border: 2px solid black;
+  padding: 20px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cart-products,
+#total-price {
+  margin-bottom: 10px;
+}

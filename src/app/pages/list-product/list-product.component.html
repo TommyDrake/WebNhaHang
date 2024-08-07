@@ -1,0 +1,23 @@
+<h1>Cac mon an ngon nhat</h1>
+
+<div id="product-container">
+  @for (product of storeService.products; track $index) {
+    <app-product-card
+      [routerLink]="['/product', product.id]"
+      [product]="product"
+    ></app-product-card>
+  }
+</div>
+
+<div id="summary-container">
+  <div id="cart-products">
+    <h2>San Pham Trong Gio:</h2>
+    @for (product of getCartProducts(); track $index) {
+      <li>{{ product.name }} - {{ product.quantity }} x {{ product.price }}</li>
+    }
+  </div>
+
+  <div id="total-price">
+    <h2>Tong Tien: {{ getTotalPrice() }}</h2>
+  </div>
+</div>

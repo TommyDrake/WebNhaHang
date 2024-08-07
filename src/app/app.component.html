@@ -1,0 +1,13 @@
+<app-navbar></app-navbar>
+<button (click)="authService.login()">Dang Nhap voi Google</button>
+<button (click)="authService.logout()">Dang Xuat</button>
+
+<!--<div id="cart-container">-->
+<!--  @if (authService.currentUser) {-->
+<!--    @for (product of this.storeService.products; track $index) {-->
+<!--      <app-product-card [product]="product"></app-product-card>-->
+<!--    }-->
+<!--  }-->
+<!--</div>-->
+
+<router-outlet></router-outlet>
